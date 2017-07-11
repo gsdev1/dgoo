@@ -16,7 +16,7 @@ func TestMessage(t *testing.T) {
 	handler := http.HandlerFunc(indexHandler)
 	handler.ServeHTTP(rr, req)
 
-	expected := "Messagedsa"
+	expected := "Message"
 	if rr.Body.String() != expected {
 		t.Errorf("handler returned unexpected body: got %v want %v",
 			rr.Body.String(), expected)
