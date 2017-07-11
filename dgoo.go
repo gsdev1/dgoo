@@ -46,5 +46,5 @@ func main() {
 }
 
 func indexHandler(w http.ResponseWriter, _ *http.Request) {
-	fmt.Fprint(w, "Message")
+	fmt.Fprint(w, "New test Message")
 }
